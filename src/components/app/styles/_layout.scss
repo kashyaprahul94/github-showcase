@@ -1,0 +1,19 @@
+.full-height {
+  @include full-height();
+}
+.full-width {
+  @include full-width();
+}
+
+#app {
+  min-height: 100%;
+  @include full-height();
+
+  .container {
+    @include full-height();
+
+    > section.wrapper {
+      margin-top: 12px;
+    }
+  }
+}
